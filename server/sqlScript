@@ -1,0 +1,24 @@
+
+CREATE TABLE request (
+    id int NOT NULL AUTO_INCREMENT,
+    shareId BIGINT,
+    url VARCHAR(255),
+    method VARCHAR(50),
+    pathUrl VARCHAR(255),
+    scheme VARCHAR(50),
+    domain VARCHAR(255),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE responses (
+    id int NOT NULL AUTO_INCREMENT,
+    request_id INT,
+    version VARCHAR(50),
+    statusCode INT,
+    statusMessage VARCHAR(255),
+    location VARCHAR(255),
+    serverName VARCHAR(255),
+    serverDate VARCHAR(255),
+    FOREIGN KEY (request_id) REFERENCES request(id),
+      PRIMARY KEY (id)
+)

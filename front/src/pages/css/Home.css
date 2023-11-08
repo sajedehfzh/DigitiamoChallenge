@@ -1,0 +1,55 @@
+
+
+
+.url-holder {
+    background-color: rgb(212, 208, 208);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    
+    
+    display: block; /* Makes the input behave like a block element */
+    border: none;
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  .main{
+
+
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+   /* Button styling */
+   .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-left: 150px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+    /*cursor: pointer;*/
+  }
+
+
+
+  .logo-container {
+    width: 100%; /* Take the full width of the container */
+    text-align: center; /* Center the content horizontally */
+    margin-top: 200px; /* Add some space at the top */
+
+  }
+  
+  .logo-container img {
+    max-width: 100%; /* Ensure the image is responsive and doesn't overflow its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+  }
